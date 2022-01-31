@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:paddingBottom="8dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:text="Recipients" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:visibility="visible"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/recipientChips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:selectionRequired="true"
+            app:singleLine="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/allMembersChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/appTheme"
+                android:checkable="true"
+                android:checked="true"
+                android:text="All"
+                android:textColor="@android:color/white"
+                app:chipSurfaceColor="@color/icon_checkable" />
+
+            <!--            <com.google.android.material.chip.Chip-->
+            <!--                android:checkable="true"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Thomas" />-->
+
+            <!--            <com.google.android.material.chip.Chip-->
+            <!--                android:checkable="true"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Cecilia" />-->
+
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPayees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

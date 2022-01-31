@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/payeeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:maxLines="1"
+        android:text="Thomas"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="18sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/itemLockBtn"
+        android:layout_width="62dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:checkable="true"
+        app:icon="@android:drawable/ic_lock_lock"
+        app:iconGravity="start"
+        app:iconTint="@color/icon_checkable" />
+
+    <EditText
+        android:id="@+id/allocationAmount"
+        android:background="@drawable/border_rounded_minimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:minWidth="84dp"
+        android:paddingStart="16dp"
+        android:padding="8dp"
+        android:paddingEnd="16dp"
+        android:textSize="18sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

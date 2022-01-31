@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="io.oddlot.opensplit.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_groupFragment"
+            app:destination="@id/groupFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_ticketFragment"
+            app:destination="@id/ticketFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="io.oddlot.opensplit.fragments.editExpenseFragment"
+        android:label="ticket_fragment"
+        tools:layout="@layout/fragment_expense_edit" />
+
+    <fragment
+        android:id="@+id/groupFragment"
+        android:name="io.oddlot.opensplit.fragments.GroupFragment"
+        android:label="fragment_group"
+        tools:layout="@layout/fragment_group">
+        <action
+            android:id="@+id/action_groupFragment_to_expensesFragment"
+            app:destination="@id/expensesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/expensesFragment"
+        android:name="io.oddlot.opensplit.fragments.ExpenseListFragment"
+        android:label="fragment_expenses_list"
+        tools:layout="@layout/fragment_expense_list" />
+
+</navigation>

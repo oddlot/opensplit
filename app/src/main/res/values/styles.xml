@@ -1,0 +1,73 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/appTheme</item>
+        <item name="colorAccent">@color/appTheme</item>
+        <item name="colorControlNormal">@color/lightBlack</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+        <item name="appBarLayoutStyle">@style/ToolbarTheme</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="bottomSheetDialogTheme">@style/BottomSheet</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="AppTheme" parent="Base.AppTheme">
+        <item name="android:windowBackground">#FCFCFC</item>
+        <item name="colorOnSurface">@color/blueGreyDark</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+    <style name="HintTextAppearance" parent="TextAppearance.Design.Hint">
+<!--        <item name="android:shadowColor">@android:color/black</item>-->
+        <item name="background">@android:color/black</item>
+        <item name="backgroundTint">@android:color/black</item>
+<!--        <item name="android:shadowDx">0.2</item>-->
+<!--        <item name="android:shadowDy">0.2</item>-->
+<!--        <item name="android:shadowRadius">0.2</item>-->
+    </style>
+
+    <style name="BottomSheet" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+<!--        <item name="android:navigationBarDividerColor">?android:colorBackground</item>-->
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="android:background">@android:color/holo_red_dark</item>
+        <item name="color">@android:color/holo_red_dark</item>
+        <item name="android:color">@android:color/holo_red_dark</item>
+        <item name="colorControlNormal">@android:color/holo_red_dark</item>
+    </style>
+
+    <style name="SectionTitle">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SectionTitle.Sub" parent="SectionTitle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ItemTitle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.DayNight.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:textAppearance">@style/ToolbarTextAppearance</item>
+    </style>
+
+    <style name="ToolbarTextAppearance" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="android:color">@android:color/holo_purple</item>
+        <item name="android:textColor">@android:color/holo_purple</item>
+    </style>
+
+</resources>

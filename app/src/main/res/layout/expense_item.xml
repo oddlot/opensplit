@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dateHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Today"
+        android:textColor="?android:attr/textColorTertiary" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/summaryView"
+        android:fontFamily="sans-serif-black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateHeader"
+        android:padding="16dp"
+        android:text="La Vache for 8 ppl"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="18sp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/paidByDescription"
+        android:fontFamily="sans-serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summaryView"
+        android:padding="16dp"
+        android:text="Paid by Thomas"
+        android:textColor="?android:attr/textColorPrimary" />
+
+</RelativeLayout>
